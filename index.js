@@ -28,7 +28,7 @@ app.post('/webhook', function (req, res) {
   //console.log('* Received action -- %s', req.body.result.action)
 
   // parameters are stored in req.body.result.parameters
-  var userName = req.body.result.parameters['given-name']
+  var userName = 'sandeep'
   var webhookReply = 'Hello ' + userName + '! Welcome from the webhook.'
   console.log(userName)
 
