@@ -49,6 +49,24 @@ res.setHeader('Content-Type', 'application/json'); //Requires application/json M
 
 return res.send(JSON.stringify({ "speech": response, "displayText": response}));});
 
+
+app.post('/v2/Hello',(req,res)=>{
+let response = "This is a sample response from your webhook!";//Default response from the webhook to show it’s working
+let responseObj={
+     "fulfillmentText":response
+    ,"fulfillmentMessages":[
+        {
+            "text": {
+                "text": [
+                    "Hello I m Responding to intent"
+                ]
+            }
+        }
+    ]
+    ,"source":""
+}
+return res.json(responseObj);});
+
 app.listen(app.get('port'), function () {
   console.log('* Webhook service is listening on port:' + app.get('port'))
 })
