@@ -40,6 +40,15 @@ app.post('/webhook', function (req, res) {
   })
 })
 
+
+app.post('/Hello',(req,res)=>{
+
+let response = 'This is a sample response from your webhook!' //Default response from the webhook to show it’s working
+
+res.setHeader('Content-Type', 'application/json'); //Requires application/json MIME type
+
+return res.send(JSON.stringify({ "speech": response, "displayText": response}));});
+
 app.listen(app.get('port'), function () {
   console.log('* Webhook service is listening on port:' + app.get('port'))
 })
