@@ -33,7 +33,7 @@ app.post('/webhook', function (req, res) {
   //var number2 = '5'
   //var product1 = 'Dell Inspiron 3565'
   //var product2 = 'ThinkPad L380' 
-  var webhookReply = 'Hello ' + number1 + '! Welcome from the webhook.'
+  var webhookReply = 'You have ' + number1 + '! orders in your order list, and the details are.'
   
   
 //var webhookReply1 = 'You have' +  number1 + 'orders in your order list, and the details are' : + 
