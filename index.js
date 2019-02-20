@@ -37,7 +37,7 @@ app.post('/webhook', function (req, res) {
   
   
 var webhookReply1 = 'You have' +  number1 + 'orders in your order list, and the details are' : + 
- product1 + 'it will be delivered at your shipping address in' + number2 + days.
+ product1 + 'it will be delivered at your shipping address in' + number2 + 'days'.
   console.log(webhookReply1)
 
   // the most basic response
