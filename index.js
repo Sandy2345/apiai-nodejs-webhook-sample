@@ -67,6 +67,7 @@ console.log()
 
 app.post('/v2/Hello',(req,res)=>{
 let response = "This is a sample response from your webhook!";//Default response from the webhook to show it’s working
+  let number1= 2
   let product1 = 'Dell Inspiron 3565'
 let product2 = 'ThinkPad L380'
 let text1 = 'You have' + number1  + 'orders in your order list, and the details are' + product1 + 'it will be delivered at your shipping address in 5 days.'
