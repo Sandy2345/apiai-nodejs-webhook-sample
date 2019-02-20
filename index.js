@@ -73,7 +73,7 @@ let responseObj={
         {
             "text": {
                 "text": [
-                    "Hello I m Responding to intent"
+                   response
                 ]
             }
         }
