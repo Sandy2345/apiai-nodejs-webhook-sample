@@ -36,7 +36,7 @@ var text1 = 'You have' + number1  + 'orders in your order list, and the details 
 
 var text2 = 'ddddd' + product2  +  'be delivered deliver at your shipping address in 3 days'.
 
-var text3 = 'We have fantastic deals available on eBook reader would you like to check it?'
+//var text3 = 'We have fantastic deals available on eBook reader would you like to check it?'
 
 var webhookReply = text2
   
