@@ -77,7 +77,7 @@ let text2 = '' + product2  +  'be delivered deliver at your shipping address in 
 let text3 = 'We have fantastic deals available on eBook reader would you like to check it?'
 
 let webhookReply =text1+text2+text3
-  let webhookReply ='helo world sandeep'
+  //let webhookReply ='helo world sandeep'
 let responseObj={
      "fulfillmentText":response
     ,"fulfillmentMessages":[
