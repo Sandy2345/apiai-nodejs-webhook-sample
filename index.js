@@ -38,7 +38,7 @@ var text1 = 'You have' + number1  + 'orders in your order list, and the details 
 
 var text3 = We have fantastic deals available on eBook reader would you like to check it?
 
-var webhookReply = text3
+var webhookReply = text1 + text3
   
   
 //var webhookReply1 = 'You have' +  number1 + 'orders in your order list, and the details are' : + 
