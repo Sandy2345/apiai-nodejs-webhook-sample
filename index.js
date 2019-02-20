@@ -65,7 +65,7 @@ let responseObj={
     ]
     ,"source":""
 }
-return res.json(responseObj);});
+return res.json(response);});
 
 app.listen(app.get('port'), function () {
   console.log('* Webhook service is listening on port:' + app.get('port'))
