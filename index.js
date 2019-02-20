@@ -29,22 +29,22 @@ app.post('/webhook', function (req, res) {
 
   // parameters are stored in req.body.result.parameters
   var userName = 'sandeep'
-  var number1 = '2'
-  var number2 = '5'
-  var product1 = 'Dell Inspiron 3565'
-  var product2 = 'ThinkPad L380' 
+ // var number1 = '2'
+  //var number2 = '5'
+  //var product1 = 'Dell Inspiron 3565'
+  //var product2 = 'ThinkPad L380' 
   var webhookReply = 'Hello ' + userName + '! Welcome from the webhook.'
   
   
-var webhookReply1 = 'You have' +  number1 + 'orders in your order list, and the details are' : + 
- product1 + 'it will be delivered at your shipping address in' + number2 + 'days'.
-  console.log(webhookReply1)
+//var webhookReply1 = 'You have' +  number1 + 'orders in your order list, and the details are' : + 
+ //product1 + 'it will be delivered at your shipping address in' + number2 + 'days'.
+  //console.log(webhookReply1)
 
   // the most basic response
   res.status(200).json({
     source: 'webhook',
-    speech: webhookReply1,
-    displayText: webhookReply1
+    speech: webhookReply,
+    displayText: webhookReply
   })
 })
 
