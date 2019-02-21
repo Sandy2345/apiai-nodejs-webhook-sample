@@ -3,6 +3,7 @@ const bodyParser = require('body-parser')
 const app = express()
 app.use(bodyParser.json())
 app.set('port', (process.env.PORT || 5000))
+//require(/indexxx.js)
 
 const REQUIRE_AUTH = true
 const AUTH_TOKEN = 'an-example-token'
@@ -73,8 +74,37 @@ let product2 = 'ThinkPad L380'
 let order_details = 'You have '  + ' ' + orderNum  +  ' ' + 'orders in your order list, and the details are ' + ' ' + product1 + 'it will be delivered at your shipping address in 5 days. ' + ' ' + product2  +  'be delivered deliver at your shipping address in 3 days ' + ' ' + 'We have fantastic deals available on eBook reader would you like to check it?'
 let text3 = 'We have fantastic deals available on eBook reader would you like to check it?'
 
-let webhookReply =order_details
+//let webhookReply =order_details
   //let webhookReply ='helo world sandeep'
+
+//updateFromDate(duration);
+var OmnitureAPI = require('node-omniture-api')
+var omniture = new OmnitureAPI('payal.daryani@capgemini.com:Capgeminisandbox', 'e5eccca081d2a1a329ee56e41e451811');
+var pageViews;
+
+
+					var requestData = {
+						"reportDescription": {
+
+							"reportSuiteID": "geo1xxlon-we-retail-demo",
+							
+							"metrics": "[{ id: 'pageviews' }]"
+
+						}
+					}
+          
+          omniture.queueAndFetchReport(requestData, function (success, data) {
+		if (success) {
+
+			pageViews = data.report.totals[0];
+			webhookReply = pageViews;
+		} else {
+			pageViews = data;
+			webhookReply = pageViews;
+		}
+	});
+					//updatePageViews(requestData,context,duration);
+  
 let responseObj={
      "fulfillmentText":response
     ,"fulfillmentMessages":[
