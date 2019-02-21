@@ -1,4 +1,5 @@
 const express = require('express')
+const lib = require('./indexlib.js');
 const bodyParser = require('body-parser')
 const app = express()
 app.use(bodyParser.json())
@@ -78,8 +79,8 @@ let text3 = 'We have fantastic deals available on eBook reader would you like to
   //let webhookReply ='helo world sandeep'
 
 //updateFromDate(duration);
-var OmnitureAPI = require('node-omniture-api')
-var omniture = new OmnitureAPI('payal.daryani@capgemini.com:Capgeminisandbox', 'e5eccca081d2a1a329ee56e41e451811');
+//var OmnitureAPI = require('node-omniture-api')
+var omniture = new lib('payal.daryani@capgemini.com:Capgeminisandbox', 'e5eccca081d2a1a329ee56e41e451811');
 var pageViews;
 
 
