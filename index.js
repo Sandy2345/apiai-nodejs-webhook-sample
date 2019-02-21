@@ -70,11 +70,8 @@ let response = "This is a sample response from your webhook!";//Default response
   let orderNum= 2
   let product1 = 'Dell Inspiron 3565'
 let product2 = 'ThinkPad L380'
-let order_details = 'You have '  + ' ' + orderNum  +  ' ' + 'orders in your order list, and the details are ' + ' ' + product1 + 'it will be delivered at your shipping address in 5 days. ' + ' ' + product2  +  'be delivered deliver at your shipping address in 3 days'
-
-//let text2 = ' ' + product2  +  'be delivered deliver at your shipping address in 3 days'
-
-//let text3 = 'We have fantastic deals available on eBook reader would you like to check it?'
+let order_details = 'You have '  + ' ' + orderNum  +  ' ' + 'orders in your order list, and the details are ' + ' ' + product1 + 'it will be delivered at your shipping address in 5 days. ' + ' ' + product2  +  'be delivered deliver at your shipping address in 3 days ' + ' ' + 'We have fantastic deals available on eBook reader would you like to check it?'
+let text3 = 'We have fantastic deals available on eBook reader would you like to check it?'
 
 let webhookReply =order_details
   //let webhookReply ='helo world sandeep'
